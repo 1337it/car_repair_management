@@ -1,0 +1,140 @@
+{
+ "charts": [
+  {
+   "chart_name": "Car Repair Chart",
+   "label": "Car Repair Bar Chart"
+  }
+ ],
+ "content": "[{\"id\":\"DIZG_hjqmC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Car Repair Management</span>\",\"col\":12}},{\"id\":\"oQKFU8aDlk\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"7iqM1n1AI9\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Car Repair Bar Chart\",\"col\":12}},{\"id\":\"0jMVExgL4k\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"aZdI5IAEfo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle\",\"col\":3}},{\"id\":\"UuNpN7xc-8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Car Repair\",\"col\":3}},{\"id\":\"6WXEGr0YgS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Car Diagnosis\",\"col\":3}},{\"id\":\"JyWZ1I7hkk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service Manager\",\"col\":3}},{\"id\":\"ZdnZWxtbfb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Technician\",\"col\":3}},{\"id\":\"8GsMivNn2_\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"bwsxpJ1Iu8\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Configurations\",\"col\":4}},{\"id\":\"6rGKw5H5fB\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "creation": "2022-11-23 14:44:05.098577",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "call",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Car Repair Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master Configurations",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Brand",
+   "link_count": 0,
+   "link_to": "Brand",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Service Type",
+   "link_count": 0,
+   "link_to": "Service Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Car Parts",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Car Diagnosis Details",
+   "link_count": 0,
+   "link_to": "Car Diagnosis",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Car Repair Details",
+   "link_count": 0,
+   "link_to": "Car Repair Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-05-09 12:58:52.537780",
+ "modified_by": "Administrator",
+ "module": "Car Repair Management",
+ "name": "Car Repair Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Vehicle",
+   "link_to": "Vehicle",
+   "stats_filter": "{\"name\":[\"is\",\"set\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Technician",
+   "link_to": "Employee",
+   "stats_filter": "{\"is_technician\":[\"=\",1]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Car Diagnosis",
+   "link_to": "Car Diagnosis",
+   "stats_filter": "{\"name\":[\"is\",\"set\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Service Manager",
+   "link_to": "Employee",
+   "stats_filter": "{\"is_service_manager\":[\"=\",1]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Car Repair",
+   "link_to": "Car Repair",
+   "stats_filter": "{\"name\":[\"is\",\"set\"]}",
+   "type": "DocType"
+  }
+ ],
+ "title": "Car Repair Management"
+}

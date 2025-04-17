@@ -1,0 +1,36 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state==\"Done\"",
+ "creation": "2022-11-28 17:04:27.735165",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Car Repair",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Message Example\n<h3>Car Repair service request is successfully Done ! </h3>\n",
+ "modified": "2022-11-29 12:33:25.932736",
+ "modified_by": "Administrator",
+ "module": "Car Repair Management",
+ "name": "Send Mail",
+ "owner": "Administrator",
+ "property_value": "",
+ "recipients": [
+  {
+   "bcc": "",
+   "cc": "",
+   "receiver_by_document_field": "email",
+   "receiver_by_role": ""
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 1,
+ "sender": "Service Support",
+ "sender_email": "ketan.patel.serpentcs@gmail.com",
+ "set_property_after_alert": "",
+ "subject": "{{ doc.name }} Car Repair",
+ "value_changed": "workflow_state"
+}

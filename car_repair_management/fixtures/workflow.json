@@ -1,0 +1,313 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Car Repair",
+  "is_active": 1,
+  "modified": "2022-11-23 17:33:00.381670",
+  "name": "Car Repair Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Repair Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "New",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Repair Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Assigned",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Repair Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Work In Progress",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Repair Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Reopened",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Repair Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Solution Suggested",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Repair Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Done",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Repair Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Closed",
+    "update_field": null,
+    "update_value": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Assign",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Assigned",
+    "parent": "Car Repair Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "New"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Work In Progress",
+    "parent": "Car Repair Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Assigned"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Done",
+    "parent": "Car Repair Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Work In Progress"
+   },
+   {
+    "action": "Solution Suggest",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Solution Suggested",
+    "parent": "Car Repair Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Work In Progress"
+   },
+   {
+    "action": "Reopen",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Work In Progress",
+    "parent": "Car Repair Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Solution Suggested"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Closed",
+    "parent": "Car Repair Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Solution Suggested"
+   }
+  ],
+  "workflow_name": "Car Repair Workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Car Diagnosis",
+  "is_active": 1,
+  "modified": "2022-12-01 10:39:46.807570",
+  "name": "Car Diagnosis Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Assign to Technician",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Assigned",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Submitted",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "System Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Done",
+    "update_field": null,
+    "update_value": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Assign to Technician",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Assigned",
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Draft"
+   },
+   {
+    "action": "Submit to Manager",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Submitted",
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Assigned"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Done",
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Submitted"
+   },
+   {
+    "action": "Set to Draft",
+    "allow_self_approval": 1,
+    "allowed": "System Manager",
+    "condition": null,
+    "next_state": "Draft",
+    "parent": "Car Diagnosis Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Done"
+   }
+  ],
+  "workflow_name": "Car Diagnosis Workflow",
+  "workflow_state_field": "workflow_state"
+ }
+]

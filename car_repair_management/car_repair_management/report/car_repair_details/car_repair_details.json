@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-12-09 14:28:29.152810",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-12-09 14:37:58.010993",
+ "modified_by": "Administrator",
+ "module": "Car Repair Management",
+ "name": "Car Repair Details",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    `tabCar Repair`.`customer_name` as `Customer Name:data:150`,\n    `tabCar Repair`.`email` as `Email:data:150`,\n    `tabCar Repair`.`phone` as `Phone:rating:150`,\n    `tabCar Repair`.`reason_for_repair` as `Reason for Repair:data:150`,\n    `tabCar Repair`.`car` as `Car:link:150`,\n    `tabCar Repair`.`car_brand` as `Car Brand:link:150`,\n    `tabCar Repair`.`car_manufacturing_year` as `Car Manufacturing Year:data:150`,\n    `tabCar Repair`.`date` as `Repair Request Date :date:150`,\n    `tabCar Repair`.`workflow_state` as `Status :link:150` \n    FROM    \n        `tabCar Repair`",
+ "ref_doctype": "Car Repair",
+ "report_name": "Car Repair Details",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
